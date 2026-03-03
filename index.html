@@ -90,7 +90,7 @@
                 
                 <div class="hero-buttons">
                     <a href="#download" class="btn-primary">Download Free</a>
-                    <button class="btn-secondary">Watch Trailer</button>
+                    <button class="btn-secondary" onclick="openPopup()">Watch Trailer</button>
                 </div>
             </div>
             
@@ -102,6 +102,16 @@
             </div> -->
         </div>
     </section>
+
+    <!-- Model Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">✖</span>
+            <div class="video-box">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ju9Eyg2-VUw?si=b_6NLgVnbBH2HGeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Features Section -->
     <section class="features features-2" id="features-2">
@@ -476,6 +486,14 @@
                 }
             });
         });
+
+        function openPopup(){
+        document.getElementById("popup").style.display="block";
+        }
+
+        function closePopup(){
+        document.getElementById("popup").style.display="none";
+        }
     </script>
 </body>
 </html>
