@@ -908,3 +908,15 @@ footer .footer-contact:hover {
     height: 100%;
     border: none;
 }
+
+@media (max-width: 500px) {
+  header .logo-section .logo {
+    height: 26px;
+  }
+  .download-section .download-btn-large {
+    padding: 1.25rem 1rem;
+  }
+  .download-section .download-icon-circle {
+    min-width: 40px;
+  }
+}
